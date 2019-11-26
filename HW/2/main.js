@@ -35,18 +35,28 @@ var Rectangular = /** @class */ (function (_super) {
     };
     Rectangular.prototype.getArea = function (height, length) {
         var area = (2 * height) + (2 * length);
-        console.log("the Area of the " + this.name + " is " + area);
+        console.log("the Area of " + this.name + " is " + area);
         return area;
     };
-    Rectangular.prototype.getPerimeter = function () {
-        var perimeter = 0;
+    Rectangular.prototype.getPerimeter = function (height, length) {
+        var perimeter = height * length;
+        console.log("the perimeter of " + this.name + " is " + perimeter);
         return perimeter;
     };
     return Rectangular;
 }(Shape));
 var shapeArr = [];
-shapeArr[0] = new Rectangular("box1", "blue", 10);
-for (var _i = 0, shapeArr_1 = shapeArr; _i < shapeArr_1.length; _i++) {
-    var item = shapeArr_1[_i];
-    console.log(shapeArr[0].getArea(10, 10));
+shapeArr.length = 19;
+// shapeArr[0] = new Rectangular("box1","blue",10)
+for (var i = 0; i < shapeArr.length; i++) {
+    var rand1 = Math.floor(Math.random() * Math.floor(201));
+    var rand2 = Math.floor(Math.random() * Math.floor(201));
+    shapeArr.push(new Rectangular("shape" + rand1 * rand2, "blue", 10));
+    for (var _i = 0, shapeArr_1 = shapeArr; _i < shapeArr_1.length; _i++) {
+        var item = shapeArr_1[_i];
+        if (item instanceof Rectangular) {
+            shapeArr[i].getArea(rand1, rand2);
+            shapeArr[i].getPerimeter(rand1, rand2);
+        }
+    }
 }
