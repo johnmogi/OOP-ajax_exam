@@ -1,0 +1,51 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: url(../images/pexels-photo-335393.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.display-4 {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#opaque {
+    background: #fff;
+    min-height: 100vh;
+}
+
+.card {
+    /* min-width: 35rem; */
+    /* max-width: 18rem; */
+    padding: 0;
+    /* margin: 5px; */
+    box-shadow: 1px 1px 1px #ccc;
+
+}
+
+button {
+    margin: 0 10px;
+}
+
+#stage {
+    margin-top: 45px;
+}
+
+p {
+    margin-bottom: 0.2rem;
+}
+
+card-body {
+    padding: 0.25rem !important;
+}
+
+/* @media (min-width: 1200px) {
+    .container {
+        max-width: 1280px;
+    }
+} */

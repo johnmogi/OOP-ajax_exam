@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery ajax task - A 91/12/19 _ Johnathan Moguillansky</title>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="container-fluid">
+    <div class="container" id="opaque">
+        <h1 class="display-4">Hello, world!</h1>
+        <hr class="my-4">
+
+        <p class="lead">Would you like to view information regarding different countries in the world?</p>
+
+
+
+        <form class="bd-search d-flex align-items-center" name="getCountries">
+
+            <button id="all" class="btn btn-success" type="button">Display all Countries</button>
+
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input
+                    type="search" class="form-control ds-input" id="search-input" placeholder="Search..."
+                    aria-label="Search for..." autocomplete="off" data-docs-version="4.3" spellcheck="false"
+                    role="combobox" aria-autocomplete="list" aria-expanded="false"
+                    aria-owns="algolia-autocomplete-listbox-0" dir="auto"
+                    style="position: relative; vertical-align: top;">
+            </span>
+            <button id="name" class="btn btn-primary" type="button">Search</button>
+
+        </form>
+        <div class="row" id="stage">
+
+        </div>
+    </div>
+</body>
+
+</html>
