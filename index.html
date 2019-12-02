@@ -25,17 +25,25 @@
 
 
         <form class="bd-search d-flex align-items-center" name="getCountries">
+            <div class="row">
+                <div class="col-4"> <button id="all" class="btn btn-success" type="button">All
+                        Countries</button>
+                </div>
+                <div class="col-4">
+                    <span class="algolia-autocomplete"
+                        style="position: relative; display: inline-block; direction: ltr;"><input type="search"
+                            class="form-control ds-input" id="search-input" placeholder="Search..."
+                            aria-label="Search for..." autocomplete="off" data-docs-version="4.3" spellcheck="false"
+                            role="combobox" aria-autocomplete="list" aria-expanded="false"
+                            aria-owns="algolia-autocomplete-listbox-0" dir="auto"
+                            style="position: relative; vertical-align: top;">
+                    </span></div>
 
-            <button id="all" class="btn btn-success" type="button">Display all Countries</button>
+                <div class="col-4"> <button id="name" class="btn btn-primary" type="button">Search</button>
+                </div>
 
-            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input
-                    type="search" class="form-control ds-input" id="search-input" placeholder="Search..."
-                    aria-label="Search for..." autocomplete="off" data-docs-version="4.3" spellcheck="false"
-                    role="combobox" aria-autocomplete="list" aria-expanded="false"
-                    aria-owns="algolia-autocomplete-listbox-0" dir="auto"
-                    style="position: relative; vertical-align: top;">
-            </span>
-            <button id="name" class="btn btn-primary" type="button">Search</button>
+            </div>
+
 
         </form>
         <div class="row" id="stage">
